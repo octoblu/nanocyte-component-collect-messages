@@ -23,3 +23,17 @@ describe 'CollectMessages', ->
           data: null
       it 'should return the array', ->
         expect(@sut.onEnvelope(@envelope)).to.deep.equal ['test2']
+    describe 'when called with empty object it should create an array and then add', ->
+      beforeEach ->
+        @envelope =
+          message: "test2"
+          data: {}
+      it 'should return the array', ->
+        expect(@sut.onEnvelope(@envelope)).to.deep.equal ['test2']
+    describe 'when called with message in object form', ->
+      beforeEach ->
+        @envelope =
+          message: {"test2" : 50}
+          data: ['blarg']
+      it 'should return the array', ->
+        expect(@sut.onEnvelope(@envelope)).to.deep.equal ['blarg', {"test2" : 50}]
