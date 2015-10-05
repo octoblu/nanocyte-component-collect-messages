@@ -9,10 +9,17 @@ describe 'CollectMessages', ->
     expect(@sut).to.be.an.instanceOf ReturnValue
 
   describe '->onEnvelope', ->
-    describe 'when called with empty data and a message', ->
-      it 'should return the data', ->
-        expect(@sut.onEnvelope({ message: 'anything'})).to.deep.equal ['anything']
-
-    describe 'when called with previous data and a message', ->
-      it 'should return the data', ->
-        expect(@sut.onEnvelope({ message: 'something', data: ['anything']})).to.deep.equal ['anything', 'something']
+    describe 'when called with message it should add to array', ->
+      beforeEach ->
+        @envelope =
+          message: "test2"
+          data: ['test1']
+      it 'should return the array', ->
+        expect(@sut.onEnvelope(@envelope)).to.deep.equal ['test1', 'test2']
+    describe 'when called with empty array it should create it and then add', ->
+      beforeEach ->
+        @envelope =
+          message: "test2"
+          data: null
+      it 'should return the array', ->
+        expect(@sut.onEnvelope(@envelope)).to.deep.equal ['test2']
