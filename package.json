@@ -1,14 +1,14 @@
 {
-  "name": "nanocyte-component-collect-messages",
-  "version": "1.0.4",
-  "description": "Nanocyte component collect-messages",
+  "name": "nanocyte-component-push-message-on-data",
+  "version": "1.0.5",
+  "description": "Nanocyte component push-message-on-data",
   "keywords": [
     "nanocyte",
     "octoblu",
     "meshblu"
   ],
-  "homepage": "https://github.com/octoblu/nanocyte-component-collect-messages",
-  "bugs": "https://github.com/octoblu/nanocyte-component-collect-messages/issues",
+  "homepage": "https://github.com/octoblu/nanocyte-component-push-message-on-data",
+  "bugs": "https://github.com/octoblu/nanocyte-component-push-message-on-data/issues",
   "author": {
     "name": "Octoblu",
     "url": "https://github.com/octoblu"
@@ -16,7 +16,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/octoblu/nanocyte-component-collect-messages.git"
+    "url": "https://github.com/octoblu/nanocyte-component-push-message-on-data.git"
   },
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec"

@@ -1,7 +1,7 @@
 ReturnValue = require 'nanocyte-component-return-value'
 _           = require 'lodash'
 
-class CollectMessages extends ReturnValue
+class PushMessageOnData extends ReturnValue
   onEnvelope: (envelope) =>
     {data , message} = envelope
 
@@ -10,4 +10,4 @@ class CollectMessages extends ReturnValue
 
     return data
 
-module.exports = CollectMessages
+module.exports = PushMessageOnData

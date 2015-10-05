@@ -1,9 +1,9 @@
 ReturnValue = require 'nanocyte-component-return-value'
-CollectMessages = require '../src/collect-messages'
+PushMessageOnData = require '../src/push-message-on-data'
 
-describe 'CollectMessages', ->
+describe 'PushMessageOnData', ->
   beforeEach ->
-    @sut = new CollectMessages
+    @sut = new PushMessageOnData
 
   it 'should exist', ->
     expect(@sut).to.be.an.instanceOf ReturnValue

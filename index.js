@@ -1,2 +1,2 @@
 require('coffee-script/register');
-module.exports = require('./src/collect-messages');
+module.exports = require('./src/push-message-on-data');

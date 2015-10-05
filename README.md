@@ -1,4 +1,4 @@
-# nanocyte-component-collect-messages
+# nanocyte-component-push-message-on-data
 
 [![Build Status](https://travis-ci.org/octoblu/nanocyte-component-collect-messages.svg?branch=master)](https://travis-ci.org/octoblu/nanocyte-component-collect-messages)
 [![Code Climate](https://codeclimate.com/github/octoblu/nanocyte-component-collect-messages/badges/gpa.svg)](https://codeclimate.com/github/octoblu/nanocyte-component-collect-messages)
